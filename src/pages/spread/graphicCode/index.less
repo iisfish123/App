@@ -1,0 +1,91 @@
+.image-code-win {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, .6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .modal-content {
+        position: relative;
+        width: 80%;
+        border-radius: 5px;
+        background-color: #ffffff;
+        margin-bottom: 80px;
+        .modal-title {
+            font-size: 16px;
+            color: #444648;
+            text-align: center;
+            padding: 20px 20px 0;
+        }
+        footer {
+            height: 50px;
+            display: flex;
+        }
+        .btn {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: #B6B8BA;
+            box-sizing: border-box;
+            &.sure {
+                color: #40A1FF;
+            }
+            &:visited {
+                background-color: #cccccc;
+            }
+        }
+        .br {
+            border-right: 1px solid #F2F2F2;
+        }
+        .bt {
+            border-top: 1px solid #F2F2F2;
+        }
+        .graphic-code {
+            padding: 0 .2rem;
+            p, span {
+                font-size: .16rem;
+            }
+            .code-img {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: .18rem;
+                img {
+                    width: 1.01rem;
+                    height: .35rem;
+                }
+                span {
+                    font-size: .14rem;
+                    color: #40A1FF;
+                    padding-bottom: .13rem;
+                }
+            }
+            .inp-code {
+                display: flex;
+                padding-bottom: .10rem;
+            }
+            input {
+                width: 100%;
+                padding: .13rem 0 .13rem .15rem;
+                border: 1px solid #F0F0F0;
+                border-radius: .05rem;
+                font-size: .16rem;
+                &::-webkit-input-placeholder {
+                    font-size: .15rem;
+                    color: #B6B8BA;
+                }
+            }
+            .code-error {
+                font-size: .12rem;
+                color: #F24454;
+                padding-bottom: .15rem;
+            }
+        }
+    }
+}

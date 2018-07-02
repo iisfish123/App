@@ -1,0 +1,50 @@
+.header{
+  height: 0.5rem;
+  width: 3.75rem;
+  left: 0;
+  top: 0;
+  padding: 0 0.2rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  &>*{
+    position: relative;
+    flex: 1 1;
+    line-height: .5rem;
+  }
+  .header-center{
+    flex: 3 ;
+    text-align: center;
+  }
+  .header-left{
+
+  }
+  .header-back{
+    &:after{
+      content: ' ';
+      background-image: url('../../images/header/backBtn.png');
+      background-size: 100% 100%;
+      width: .2rem;
+      height: .2rem;
+      position: absolute;
+      top:.15rem;
+    }
+  }
+  .header-right{
+    text-align: right;
+    color: #169bd5;
+  }
+  .header-go{
+    &:after{
+      content: ' ';
+      background-image: url('../../images/header/delete.png');
+      background-size: 100% 100%;
+      width: .2rem;
+      height: .2rem;
+      position: absolute;
+      top:.15rem;
+      right:0rem;
+    }
+  }
+
+}

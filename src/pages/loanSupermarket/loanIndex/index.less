@@ -1,0 +1,88 @@
+.loan-list{
+    background: #fff;
+    font-size: .14rem;
+    ul{
+        .loanLi{
+            padding: .23rem 0;
+            .box{
+                display: flex;
+                .boxLeft{
+                    width: 1rem;
+                    .appIcon{
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: .1rem;
+                        img{
+                            width: .24rem;
+                            text-align: center;
+                            display: inherit;
+                            height: .24rem;
+                            border-radius: 0.03rem;
+                        }
+                    }
+                    
+                    p{
+                        font-size: .15rem;
+                        text-align: center;
+                        color:#444648;
+                        font-weight: bold;
+                        letter-spacing: 0.01rem;
+                    }
+                }
+                .loanCenter{
+                    width: 1.78rem;
+                    margin-left: 0.02rem;
+                    .loanMoney{
+                        line-height: .23rem;
+                        margin-bottom: .13rem;
+                        color:#444648;
+                        font-size: 0.16rem;
+                        font-weight: bold;
+                        letter-spacing: 0.01rem;
+                    } 
+                    .loanTime{
+                        color: #AAACAE;
+                        line-height: .2rem;
+                        font-size: .14rem;
+                        overflow:hidden;
+                        text-overflow:ellipsis;
+                        white-space:nowrap
+                    }
+                }
+                .loanRight{
+                    margin-left: 0.02rem;
+                    display: flex;
+                    align-items: center;
+                    a{
+                        display: block;
+                        width: .74rem ;
+                        height:.3rem;
+                        line-height: .3rem;
+                        text-align: center;
+                        border: 1px solid #E1E5E8;
+                        color: #41ABFE;
+                        font-weight: 600;
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+    }
+    .load-more{
+        text-align: center;
+        .loading{
+            width: .25rem;
+            animation: pageloading .8s linear infinite;
+        }
+    }
+}
+
+@keyframes pageloading {
+    from {
+        transform: rotateZ(0);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}

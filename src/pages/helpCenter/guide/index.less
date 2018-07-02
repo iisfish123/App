@@ -1,0 +1,139 @@
+.novice-guide {
+    height: 100%;
+    font-size: 0.12rem;
+    nav {
+        height: 0.44rem;
+        .navFixed {
+            position: fixed;
+            background: #fff;
+            width: 100%;
+            z-index: 10;
+            //-webkit-box-shadow: 0 2px 5px rgba(230, 230, 230, 0.1);
+            //box-shadow: 0 2px 5px rgba(230, 230, 230, 0.1);
+            display: flex;
+            align-items: center;
+            i {
+                width: 0.39rem;
+                height: 0.44rem;
+            }
+            h4.title {
+                font-size: 0.18rem;
+                color: #444648;
+                text-align: center;
+                flex: 1 1;
+            }
+            .go-back {
+                background: url('../../../images/helpCenter/backBtn.png') no-repeat center right;
+                background-size: 0.19rem 0.15rem;
+                //margin-bottom: 0.18rem;
+            }
+        }
+    }
+    .guide-content {
+        height: 13.3rem;
+        background: url('../../../images/helpCenter/bg.png') center center no-repeat;
+        background-size: 3.75rem;
+        .triangle-up {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-left: 0.1rem solid transparent;
+            border-right: 0.1rem solid transparent;
+            border-bottom: 0.1rem solid white;
+            position: absolute;
+        }
+        .guide-step {
+            padding-top: 2.4rem;
+            img.step-icon {
+                width: 0.5rem;
+            }
+            .li01 {
+                .step-content {
+                    margin-left: 0.16rem;
+                }
+                img.step-icon {
+                    margin-left: 0.32rem;
+                }
+                .triangle-up {
+                    top: -0.1rem;
+                    left: 0.31rem;
+                }
+                .screen {
+                    right: 0.22rem;
+                    bottom: -0.46rem;
+                }
+            }
+            .li02{
+                margin-top: 1.4rem;
+                .step-content {
+                    margin-left: 1.4rem;
+                }
+                img.step-icon {
+                    margin-left: 2.98rem;
+                }
+                .triangle-up {
+                    top: -0.1rem;
+                    left: 1.74rem;
+                }
+                .screen {
+                    right: 2.2rem;
+                    bottom: -0.1rem;
+                }
+            }
+            .li03 {
+                margin-top: 1.26rem;
+                button {
+                    width: 1.86rem;
+                    height: 0.4rem;
+                    background: #00D9B8;
+                    border-radius: 0.05rem;
+                    font-size: 0.18rem;
+                    color: #FFFFFF;
+                    text-align: center;
+                    margin: 0.17rem 0 0 0;
+                    border: 0;
+                }
+            }
+            li {
+                position: relative;
+                .step-content {
+                    padding-bottom: 0.14rem;
+                    position: relative;
+                    width: 2.19rem;
+                    height: 100%;
+                    background: #fff;
+                    border-radius: 0.1rem;
+                    margin-top: 0.16rem;
+                    padding-left: 0.18rem;
+                    h3 {
+                        font-size: 18px;
+                        color: #444648;
+                        line-height: 0.26rem;
+                        margin-bottom: 0.09rem;
+                        padding-top: 0.15rem;
+                    }
+                    p {
+                        font-size: 0.15rem;
+                        color: #686A6E;
+                        height: 0.24rem;
+                    }
+                }
+                .screen {
+                    width: 1.43rem;
+                    height: 1.43rem;
+                    position: absolute;
+                }
+            }
+        }
+
+    }
+    .guide-btn {
+        width: 100%;
+        text-align: center;
+        background: #4B89CB;
+        height: 0.5rem;
+        line-height: 0.5rem;
+        font-size: 0.18rem;
+        color: #FFFFFF;
+    }
+}

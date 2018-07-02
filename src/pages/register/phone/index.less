@@ -1,0 +1,49 @@
+.register-phone {
+    font-size: 0.15rem;
+    background: #fff;
+
+    .register-phone-main{
+        position: relative;
+        display: flex;
+        padding: 0 .5rem;
+        justify-content: space-between;
+        margin-top: .4rem;
+        flex-direction: row;
+        .register-phone-step{
+            display: flex;
+            flex-direction: column;
+            .step-active{
+                background: #ffff00;
+            }
+            text-align: center;
+            flex: 1 1;
+            .step{
+                display: inline-block;
+                width: .2rem;
+                border: 1px solid #000;
+                border-radius: 5rem;
+                vertical-align: middle;
+                overflow: hidden;
+                text-align: center;
+            }
+            &:nth-child(1){
+                text-align: right;
+            }
+            &:nth-child(2){
+                flex: 3;
+            }
+            &:nth-child(3){
+                text-align: left;
+            }
+        }
+
+        .register-step-name{
+            display: flex;
+            .step-name{
+                flex: 1 1;
+            }
+        }
+
+    }
+
+}
