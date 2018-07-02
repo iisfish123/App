@@ -7,11 +7,10 @@ export default class Phone extends Component {
     render() {
         return (
             <div className="register-phone">
-                <Header headerLeft="header-back" headerCenterText="Welcome Registe"/>
+                <Header headerLeft="header-back" headerCenterText="Welcome Registe" />
 
-                <div className="register-phone-main">
-
-                    <div className="main-step">
+                <div className="step-reg">
+                    <div className="register-phone-main">
                         <div className="register-phone-step">
                             <div className="step step-active">1</div>
                         </div>
@@ -20,20 +19,36 @@ export default class Phone extends Component {
                             <div className="step">
                                 2
                             </div>
-                            .................
+                            ..................
                         </div>
                         <div className="register-phone-step">
                             <div className="step">3</div>
                         </div>
                     </div>
 
-
                     <div className="register-step-name">
                         <div className="step-name">输入手机号</div>
                         <div className="step-name">设置登录密码</div>
                         <div className="step-name">获取验证码</div>
                     </div>
+
+                    <p>
+                        <input type="number" placeholder="请输入手机号"/>
+                    </p>
+
+                    <div className="submit">
+                        登录
+                    </div>
+
+                    <div className="agree">
+                        <input type="radio"/>我已阅读并同意<a href="#">注册相关协议</a>
+                    </div>
                 </div>
+
+
+
+
+
             </div>
         )
     }

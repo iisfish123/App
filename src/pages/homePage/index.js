@@ -4,10 +4,14 @@ import { Route, Link, Redirect } from 'react-router-dom';
 import Header from '../../component/header/header.js';
 
 export default class HomePage extends Component {
+    headerRightClick = () => {
+        this.props.history.push('/register/phone');
+    }
+
     render() {
         return (
             <div className="home-page">
-                <Header headerRightText="注 冊" />
+                <Header headerRightText="注 冊" headerRightClick={this.headerRightClick}/>
 
                 <div className="home-page-title">
                     Wallet
