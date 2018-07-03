@@ -10,18 +10,18 @@ export default class Phone extends Component {
                 <Header headerLeft="header-back" headerCenterText="Welcome Registe" />
 
                 <div className="step-reg">
-                    <div className="register-phone-main">
-                        <div className="register-phone-step">
+                    <div className="register-main">
+                        <div className="register-step">
                             <div className="step step-active">1</div>
                         </div>
-                        <div className="register-phone-step">
+                        <div className="register-step">
                             ..................
                             <div className="step">
                                 2
                             </div>
                             ..................
                         </div>
-                        <div className="register-phone-step">
+                        <div className="register-step">
                             <div className="step">3</div>
                         </div>
                     </div>
@@ -36,8 +36,8 @@ export default class Phone extends Component {
                         <input type="number" placeholder="请输入手机号"/>
                     </p>
 
-                    <div className="submit">
-                        登录
+                    <div className="submit" onClick={() => {this.props.history.push('/register/password')}}>
+                        下一步
                     </div>
 
                     <div className="agree">

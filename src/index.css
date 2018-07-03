@@ -23,28 +23,28 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 
 /*消除input内阴影*/
-input {
+input[type='text'] ,input[type='number'] ,input[type='tel'] ,input[type='password']{
     -webkit-appearance: none;
     border: 0px;
     outline: none;
 }
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+input[type='text'] ,input[type='number'] ,input[type='tel'] ,input[type='password']::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     /* WebKit browsers */
     color: #e4e4e4;
 }
-input:-moz-placeholder, textarea:-moz-placeholder {
+input[type='text'] ,input[type='number'] ,input[type='tel'] ,input[type='password']:-moz-placeholder, textarea:-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
     color: #e4e4e4;
 }
-input::-moz-placeholder, textarea::-moz-placeholder {
+input[type='text'] ,input[type='number'] ,input[type='tel'] ,input[type='password']::-moz-placeholder, textarea::-moz-placeholder {
     /* Mozilla Firefox 19+ */
     color: #e4e4e4;
 }
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+input[type='text'] ,input[type='number'] ,input[type='tel'] ,input[type='password']:-ms-input-placeholder, textarea:-ms-input-placeholder {
     /* Internet Explorer 10+ */
     color: #e4e4e4;
 }
