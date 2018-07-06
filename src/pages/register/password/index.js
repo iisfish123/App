@@ -33,14 +33,14 @@ export default class Password extends Component {
                     </div>
 
                     <p className='line'>
-                        <input type="password" placeholder="设置登录密码"/>
+                        <input type="password" placeholder="设置登录密码" />
                     </p>
 
                     <p>
                         6~12位数字、字母、符号，不许有空格
                     </p>
 
-                    <div className="submit">
+                    <div className="submit"  onClick={() => {this.props.history.push('/register/vcode')}}>
                         下一步
                     </div>
 

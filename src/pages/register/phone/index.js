@@ -33,7 +33,7 @@ export default class Phone extends Component {
                     </div>
 
                     <p>
-                        <input type="number" placeholder="请输入手机号"/>
+                        <input type="tel" placeholder="请输入手机号"/>
                     </p>
 
                     <div className="submit" onClick={() => {this.props.history.push('/register/password')}}>
