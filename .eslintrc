@@ -14,8 +14,8 @@
     "rules": {
         "no-unused-vars": 0,
         "quotes": ["error", "single"],
-        "comma-spacing": [2, { "before": false, "after": true }],
-        "arrow-spacing": "error",
+//        "comma-spacing": [2, { "before": false, "after": true }],
+//        "arrow-spacing": "error",
         "no-duplicate-imports": "error",
         "no-var": "error",
         "eqeqeq": ["error", "always"],

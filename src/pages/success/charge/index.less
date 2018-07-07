@@ -1,0 +1,45 @@
+.charge-page {
+  font-size: 0.15rem;
+  background: #fff;
+  .charge-page-title{
+    padding: .2rem 0rem;
+    text-align: center;
+    img{
+      display: inline-block;
+    }
+  }
+
+  .charge-page-main{
+    background: rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    padding: 0rem .1rem;
+
+    .charge-page-card,.charge-page-money{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .card-title,.card-value,.money-title,.money-value{
+        flex: 1 1 ;
+      }
+
+      .money-value,.card-value{
+        text-align: right;
+      }
+    }
+
+  }
+
+  .charge-page-footer{
+    text-align: center;
+    margin-top: .6rem;
+    input{
+      display: inline-block;
+      width: 2.9rem;
+      height: .3rem;
+      background: #6dfa0c;
+      border-radius: .2rem;
+    }
+  }
+
+}

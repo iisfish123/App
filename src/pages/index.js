@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route, Link, Redirect} from 'react-router-dom';
 import routes from './routes';
 
 export default class IndexPage extends Component {
@@ -23,8 +23,12 @@ export default class IndexPage extends Component {
         return (
             <div className="index-page">
                 <Switch>
+
                     {
                         routes.map((item, key) => item.level === 1 && <Route key={key} path={item.path} component={item.component}/>)
+                    }
+                    {
+                        <Redirect from="/" to="/homePage" />
                     }
                 </Switch>
             </div>

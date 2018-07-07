@@ -4,6 +4,39 @@ import Header from '../../../component/header/header.js';
 import './index.less';
 
 export default class Vcode extends Component {
+
+    state = {
+        'otherTime' : '获取验证码'
+    }
+    componentWillUnmount(){
+        clearInterval(window.timer);
+        window.timer= 0;
+    }
+    componentDidMount(){
+    }
+
+    handleTimer = ()=>{
+        if(window.timer){
+            return;
+        }
+        window.RealTime = 60;
+        window.timer = setInterval(()=>{
+            window.RealTime = window.RealTime-1;
+            if(window.RealTime<0){
+                clearInterval(window.timer);
+                window.timer = 0;
+                window.RealTime = 60;
+                this.setState({
+                    otherTime:'重新获取验证码'
+                });
+                return ;
+            }
+            this.setState({
+                otherTime:window.RealTime+'秒后重新获取'
+            })
+        },1000)
+    }
+
     render() {
         return (
             <div className="register-vcode">
@@ -16,13 +49,13 @@ export default class Vcode extends Component {
                         </div>
                         <div className="register-step">
                             ..................
-                            <div className="step  step-active">
+                            <div className="step">
                                 2
                             </div>
                             ..................
                         </div>
                         <div className="register-step">
-                            <div className="step">3</div>
+                            <div className="step step-active">3</div>
                         </div>
                     </div>
 
@@ -33,12 +66,12 @@ export default class Vcode extends Component {
                     </div>
 
                     <p className="vcode-input">
-                        <input type="password" placeholder="设置登录密码" />
+                        <input type="password" placeholder="请输入6位验证码" />
 
-                        <span className="vcode-button">获取验证码</span>
+                        <span className="vcode-button" onClick={this.handleTimer}>{this.state.otherTime}</span>
                     </p>
 
-                    <div className="submit"  onClick={() => {this.props.history.push('/register/vcode')}}>
+                    <div className="submit"  onClick={() => {this.props.history.push('/Index')}}>
                         下一步
                     </div>
 

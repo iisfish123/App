@@ -1,0 +1,55 @@
+.SelectCard {
+    font-size: 0.15rem;
+    background: #fff;
+    .SelectCard-page-ul{
+        img{
+            display: inline-block;
+            vertical-align: middle;
+            width: .3rem;
+        }
+        span{
+            vertical-align: middle;
+            margin-left: .1rem;
+        }
+        li{
+            position: relative;
+            padding: .1rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.22);
+        }
+        li::after{
+            content: ' ';
+            //background-image: url('../../../images/public/go.png');
+            background-size: 100% 100%;
+            width: .2rem;
+            height: .2rem;
+            position: absolute;
+            top:.15rem;
+            right:.1rem;
+        }
+    }
+
+    .SelectCard-page-footer{
+        padding: .2rem .2rem;
+        position: relative;
+        .SelectCard-page-footer-icon{
+            background-image: url('../../../images/header/head.png');
+            background-size: 100% 100%;
+            width: .2rem;
+            height: .2rem;
+            display: inline-block;
+        }
+        span{
+            margin-left: .1rem;
+        }
+    }
+    .SelectCard-page-footer::after{
+        content: ' ';
+        background-image: url('../../../images/public/go.png');
+        background-size: 100% 100%;
+        width: .2rem;
+        height: .2rem;
+        position: absolute;
+        top:.15rem;
+        right:.1rem;
+    }
+}
