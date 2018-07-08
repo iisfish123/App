@@ -4,6 +4,10 @@ import Index from './Index/index';
 import Wallet from './wallet/index';
 import Card from './Card/index';
 import Success from './Success/index';
+import Password from './password/index';
+import Myset from './myset/index';
+import Pay from './pay/index';
+import Server from './Server/index';
 
 // level 1：表示1级路由， 2：表示2级路由
 const routes = [
@@ -41,6 +45,30 @@ const routes = [
         path: '/Success',
         component: Success,
         title: '绑定银行卡',
+        level: 1,
+    },
+    {
+        path: '/Password',
+        component: Password,
+        title: '设置密码',
+        level: 1,
+    },
+    {
+        path: '/Myset',
+        component: Myset,
+        title: '个人设置',
+        level: 1,
+    },
+    {
+        path: '/Pay',
+        component: Pay,
+        title: '收付款',
+        level: 1,
+    },
+    {
+        path: '/Server',
+        component: Server,
+        title: '服务协议',
         level: 1,
     }
 ]

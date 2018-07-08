@@ -11,10 +11,10 @@ class Header extends Component {
 
     render() {
         //console.info(this.props.headerRight)
-        const { headerRight, headerRightText, headerLeft, headerCenterText, headerRightClick, headerLeftClick } = this.props;
+        const { headerRight, headerRightText, headerLeft, headerCenterText, headerRightClick, headerLeftClick, headerLeftText} = this.props;
         return (
             <div className="header">
-                <div className={`header-left ${headerLeft?headerLeft:''}`} onClick={headerLeftClick?headerLeftClick:(headerLeft==='header-back'?this.defaultClick:null)}></div>
+                <div className={`header-left ${headerLeft?headerLeft:''}`} onClick={headerLeftClick?headerLeftClick:(headerLeft==='header-back'?this.defaultClick:null)}>{headerLeftText}</div>
                 <div className="header-center">{headerCenterText?headerCenterText:''}</div>
                 <div className={`header-right ${headerRight?headerRight:''}`} onClick={headerRightClick}>
                     {

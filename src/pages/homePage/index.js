@@ -25,11 +25,11 @@ export default class HomePage extends Component {
                         密码：<input type="text" placeholder="请输入密码"/>
                     </p>
 
-                    <div className="submit">
+                    <div className="submit" onClick={()=>{this.props.history.push('/Index')}}>
                         登录
                     </div>
 
-                    <a href="">forget password</a>
+                    <a onClick={()=>{this.props.history.push('/Password/Vcode');}}>forget password</a>
                 </div>
 
             </div>

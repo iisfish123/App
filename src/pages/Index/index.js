@@ -6,7 +6,7 @@ import Header from '../../component/header/header.js';
 export default class Index extends Component {
 
     headerLeftClick = () => {
-        console.info('go set password');
+        this.props.history.push('/Myset/Setting')
     }
 
     headerRightClick = () => {
@@ -38,7 +38,7 @@ export default class Index extends Component {
                         <div className="index-page-home-main-three-img"></div>
                         <p className="index-page-home-main-three-p">充值</p>
                     </div>
-                    <div className="index-flex index-page-home-main-three-2">
+                    <div className="index-flex index-page-home-main-three-2" onClick={() => {this.props.history.push('/Pay/Start')}}>
                         <div className="index-page-home-main-three-img"></div>
                         <p className="index-page-home-main-three-p">待付款</p>
                     </div>

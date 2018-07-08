@@ -41,7 +41,7 @@ export default class Phone extends Component {
                     </div>
 
                     <div className="agree">
-                        <input type="radio"/>我已阅读并同意<a href="#">注册相关协议</a>
+                        <input type="radio"/>我已阅读并同意<a onClick={() => {this.props.history.push('/Server/Serverlist')}}>注册相关协议</a>
                     </div>
                 </div>
 
