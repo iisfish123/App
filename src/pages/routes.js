@@ -8,6 +8,7 @@ import Password from './password/index';
 import Myset from './myset/index';
 import Pay from './pay/index';
 import Server from './Server/index';
+import Account from './account/index';
 
 // level 1：表示1级路由， 2：表示2级路由
 const routes = [
@@ -69,6 +70,12 @@ const routes = [
         path: '/Server',
         component: Server,
         title: '服务协议',
+        level: 1,
+    },
+    {
+        path: '/Account',
+        component: Account,
+        title: '账单',
         level: 1,
     }
 ]

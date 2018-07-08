@@ -10,7 +10,7 @@ export default class Index extends Component {
     }
 
     headerRightClick = () => {
-        console.info('go set redpack');
+        this.props.history.push('/Account/List')
     }
 
     goToRecharge = () =>{//充值
