@@ -18,7 +18,7 @@ export default class Setting extends Component {
                 <Header headerLeft="header-back" headerCenterText="个人设置" />
 
 
-                <div className="Setting-page-main" onClick={()=>{this.props.history.push('/Myset/info')}}>
+                <div className="Setting-page-main">
                     <p>
                         <span>实名验证</span>
                         <span className="foot">已验证</span>
